@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "snyk": "^1.316.1"
   },
   "main": "src/electron-starter.js",
   "scripts": {
@@ -13,10 +14,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "electron": "electron ."
+    "electron": "electron .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "electron": "1.8.2-beta.4",
     "foreman": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
